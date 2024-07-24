@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 # This is a sample deployment manifest file for a simple web application.
->>>>>>> origin/main
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,15 +16,7 @@ spec:
         app: go-web-app
     spec:
       containers:
-<<<<<<< HEAD
-        - name: go-web-app
-          image: rithik1504/go-web-app:{{ .Values.image.tag }}
-          ports:
-            - containerPort: 8080
-
-=======
       - name: go-web-app
-        image: abhishekf5/go-web-app:{{ .Values.image.tag }}
+        image: rithik15/go-web-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
->>>>>>> origin/main

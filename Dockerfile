@@ -3,7 +3,11 @@
 # and run the container
 
 # Start with a base image
+<<<<<<< HEAD
 FROM golang:1.22.5 as base
+=======
+FROM golang:1.21 as base
+>>>>>>> origin/main
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -35,4 +39,8 @@ COPY --from=base /app/static ./static
 EXPOSE 8080
 
 # Command to run the application
+<<<<<<< HEAD
 CMD ["./main"]
+=======
+CMD ["./main"]
+>>>>>>> origin/main
